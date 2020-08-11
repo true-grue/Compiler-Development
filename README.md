@@ -7,3 +7,4 @@
 1. Телеграм-канал с новостями и полезными ссылками по тематике разработки языков и компиляторов [PLComp](https://t.me/plcomp).
 1. Телеграм-чат с обсуждением вопросов компиляции [Compiler Development](https://t.me/CompilerDev).
 1. Телеграм-канал для поиска работы в около-компиляторной области [CompilerJobs](https://t.me/compiler_jobs).
+1. Список компаний, которые занимаются компиляторами [github.com/mgaudet/CompilerJobs](https://github.com/mgaudet/CompilerJobs).
