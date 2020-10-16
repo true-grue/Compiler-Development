@@ -10,19 +10,16 @@
 
 ```Python
 def scan(source):
-  tokens = source.split()
-  return [("Push", int(x)) if x[0].isdigit() else ("Op", x) for x in tokens]
+    tokens = source.split()
+    return [(('Push', int(x)) if x[0].isdigit() else ('Op', x))
+            for x in tokens]
 ```
 
 Что мы здесь сделали? Функция scan получает от пользователя строку в обратной польской форме записи ("2 2 +").
 А на выходе мы получаем промежуточное представление. Вот такое, например:
 
 ```
-[
-  ('Push', 2),
-  ('Push', 2),
-  ('Op', '+')
-]
+[('Push', 2), ('Push', 2), ('Op', '+')]
 ```
 
 Итак, мы уже получили компилятор. Но уж очень он несерьезный. Вспомним, что изначально речь шла о коде на Си.
@@ -31,15 +28,15 @@ def scan(source):
 
 ```Python
 def trans(ir):
-  code = []
-  for tag, val in ir:
-    if tag == "Push":
-      code.append("st[sp] = %d;" % val)
-      code.append("sp += 1;")
-    elif tag == "Op":
-      code.append("st[sp - 2] = st[sp - 2] %s st[sp - 1];" % val)
-      code.append("sp -= 1;")
-  return "\n".join(code)
+    code = []
+    for (tag, val) in ir:
+        if tag == 'Push':
+            code.append('st[sp] = %d;' % val)
+            code.append('sp += 1;')
+        elif tag == 'Op':
+            code.append('st[sp - 2] = st[sp - 2] %s st[sp - 1];' % val)
+            code.append('sp -= 1;')
+    return '\n'.join(code)
 ```
 
 Что здесь происходит? Давайте посмотрим на вывод данной функции (на том же примере с "2 2 +").
@@ -68,25 +65,30 @@ printf("%%d\n", st[sp - 1]);
 return 0;
 }"""
 
+
 def scan(source):
-  tokens = source.split()
-  return [("Push", int(x)) if x[0].isdigit() else ("Op", x) for x in tokens]
+    tokens = source.split()
+    return [(('Push', int(x)) if x[0].isdigit() else ('Op', x))
+            for x in tokens]
+
 
 def trans(ir):
-  code = []
-  for tag, val in ir:
-    if tag == "Push":
-      code.append("st[sp] = %d;" % val)
-      code.append("sp += 1;")
-    elif tag == "Op":
-      code.append("st[sp - 2] = st[sp - 2] %s st[sp - 1];" % val)
-      code.append("sp -= 1;")
-  return "\n".join(code)
+    code = []
+    for (tag, val) in ir:
+        if tag == 'Push':
+            code.append('st[sp] = %d;' % val)
+            code.append('sp += 1;')
+        elif tag == 'Op':
+            code.append('st[sp - 2] = st[sp - 2] %s st[sp - 1];' % val)
+            code.append('sp -= 1;')
+    return '\n'.join(code)
+
 
 def rpn_to_c(source):
-  return C_CODE % (ST_SIZE, trans(scan(source)))
+    return C_CODE % (ST_SIZE, trans(scan(source)))
 
-print(rpn_to_c("2 2 +"))
+
+print rpn_to_c('2 2 +')
 ```
 
 Остается скомпилировать вывод данной программы компилятором Си.
@@ -109,29 +111,34 @@ printf("%%d\n", %s);
 return 0;
 }"""
 
+
 def scan(source):
-  tokens = source.split()
-  return [("Push", int(x)) if x[0].isdigit() else ("Op", x) for x in tokens]
+    tokens = source.split()
+    return [(('Push', int(x)) if x[0].isdigit() else ('Op', x))
+            for x in tokens]
+
 
 def trans(ir):
-  stack, code = [], []
-  name_cnt = 0
-  for tag, val in ir:
-    if tag == "Push":
-      code.append("int t%d = %d;" % (name_cnt, val))
-      stack.append("t%d" % name_cnt)
-      name_cnt += 1
-    elif tag == "Op":
-      a, b = stack.pop(), stack.pop()
-      code.append("int t%d = %s %s %s;" % (name_cnt, b, val, a))
-      stack.append("t%d" % name_cnt)
-      name_cnt += 1
-  return "\n".join(code), stack.pop()
+    (stack, code) = ([], [])
+    name_cnt = 0
+    for (tag, val) in ir:
+        if tag == 'Push':
+            code.append('int t%d = %d;' % (name_cnt, val))
+            stack.append('t%d' % name_cnt)
+            name_cnt += 1
+        elif tag == 'Op':
+            (a, b) = (stack.pop(), stack.pop())
+            code.append('int t%d = %s %s %s;' % (name_cnt, b, val, a))
+            stack.append('t%d' % name_cnt)
+            name_cnt += 1
+    return ('\n'.join(code), stack.pop())
+
 
 def rpn_to_c(source):
-  return C_CODE % trans(scan(source))
+    return C_CODE % trans(scan(source))
 
-print(rpn_to_c("2 2 +"))
+
+print rpn_to_c('2 2 +')
 ```
 
 Обратите внимание -- стека в коде на Си уже нет, а работа с ним имитируется в процессе трансляции. На стеке, который используется в процессе компиляции, содержатся не значения, а имена переменных.
