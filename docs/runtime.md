@@ -14,7 +14,7 @@
 
 ## Сборка мусора
 
-[The Garbage Collection Handbook: The Art of Automatic Memory Management](https://www.amazon.com/Garbage-Collection-Handbook-Management-Algorithms/dp/1420082795)
+[The Garbage Collection Handbook: The Art of Automatic Memory Management](https://www.amazon.com/Garbage-Collection-Handbook-Management-Algorithms/dp/1420082795) ([Web version](http://gchandbook.org/))
 
 ## Языковые машины
 
