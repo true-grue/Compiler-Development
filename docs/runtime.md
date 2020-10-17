@@ -1,12 +1,8 @@
 # Литература по вопросам, относящимся к средам выполнения
 
-## Интерпретаторы
+## Виртуальные машины
 
-[Steele, G., Sussman, J. The Art of Interpreter (pdf)](https://dspace.mit.edu/bitstream/handle/1721.1/6094/AIM-453.pdf)
-
-На основе серии метациркулярных интерпретаторов рассматривается влияние некоторых языковых фич на возможность построения модульных программ. В частности, изучается взаимное влияние разных схем связывания имён переменных (динамическая и синтаксическая), изменяемого состояния и побочных эффектов в целом, а также идентичности объектов (object identity). В качестве модельных языков используются диалекты LISP.
-
-### Шитый код
+Шитый код
 
 [Bell J. R. Threaded code //Communications of the ACM. – 1973. – Т. 16. – №. 6. – С. 370-372.](http://home.iae.nl/users/mhx/Forth_Bell.pdf)
 
@@ -22,20 +18,22 @@
 
 ## Языковые машины
 
-### Forth
+Forth
 
-### Smalltalk
+Smalltalk
 
 [Smalltalk-80: The Language and its Implementation; Adele Goldberg and DavidRobson](http://stephane.ducasse.free.fr/FreeBooks/BlueBook/Bluebook.pdf)
 
-### Prolog
+Prolog
 
-### Lisp
+Lisp
 
-## Pascal
+Pascal
+
+Lua
 
 ## Среды выполнения
 
-### Standard ML
+Standard ML
 
 [Appel A. W. A runtime system //Lisp and Symbolic Computation. – 1990. – Т. 3. – №. 4. – С. 343-380.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.35.4846&rep=rep1&type=pdf)
