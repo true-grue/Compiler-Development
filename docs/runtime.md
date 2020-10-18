@@ -21,6 +21,11 @@
 Most modern languages are implemented using Virtual Machines (VMs). While the best VMs use Just-In-Time (JIT) compilers to achieve good performance, JITs are costly to implement, and few VMs therefore come with one. The RPython language allows tracing JIT VMs to be automatically created from an interpreter, changing the economics of VM implementation. In this paper, we explain, through two concrete VMs, how meta-tracing RPython VMs can be designed and optimised, and, experimentally, the performance levels one might reasonably expect from them.
 
 
+[Würthinger T, Wimmer C, Humer C, Wöß A, Stadler L, Seaton C, Duboscq G, Simon D, Grimmer M. Practical partial evaluation for high-performance dynamic language runtimes. InProceedings of the 38th ACM SIGPLAN Conference on Programming Language Design and Implementation 2017 Jun 14 (pp. 662-676).](https://chrisseaton.com/rubytruffle/pldi17-truffle/pldi17-truffle.pdf)
+
+Статья является отличным кратким введением в практическое использование фреймворка Truffle для тех, кто уже знает как производить парсинг исходного кода, построение и непосредственную интерпретацию AST (ещё полезно знать про inline caches). Даются примеры и произвдится сравнение скорости нескольких интерпретаторов промышленных динамических языков программирования:  JavaScript, Ruby и R.
+
+
 ## Параллельное и конкурентное выполнение
 
 ## Сборка мусора
