@@ -75,7 +75,7 @@ https://compscicenter.ru/courses/compilers/2018-spring/
 
 Курс Семёна Григорьева и др. (СПбГУ, JetBrains Research).
 
-https://github.com/YaccConstructor/articles/blob/master/InProgress/Formal_langs_CFPQ_course_notes/Formal_lang_CFPQ_course_notes.pdf
+https://github.com/JetBrains-Research/FormalLanguageConstrainedReachability-LectureNotes
 
 ## "Разработка компиляторов на платформе .NET"
 
