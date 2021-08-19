@@ -18,7 +18,7 @@
 
 ## Essentials of Compilation: An Incremental Approach
 
-[Скачать](https://jeapostrophe.github.io/courses/2017/spring/406/notes/book.pdf)
+[Скачать](https://jeapostrophe.github.io/courses/2018/spring/406/notes/book.pdf)
 
 [Исходные тексты на github](https://github.com/IUCompilerCourse/Essentials-of-Compilation)
 
