@@ -20,6 +20,10 @@
 ## Тестирование компиляторов
 
 [A Survey of Compiler Testing](https://www.software-lab.org/publications/csur2019_compiler_testing.pdf)
+Junjie Chen, Jibesh Patra, Michael Pradel, Yingfei Xiong, Hongyu Zhang, Dan Hao, Lu Zhang
+ACM Computing Surveys Vol 53 Issue 1 Article No.: 4 pp 1–36, 2020
+
+https://dl.acm.org/doi/10.1145/3363562
 
 _Комментарий от @ksromanov._ Просто читаемый свежий обзор методов тестирования компиляторов. Статья охватывает тему с разных сторон, включая
 
