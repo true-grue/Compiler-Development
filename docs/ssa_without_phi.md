@@ -14,7 +14,7 @@
 1. http://mlton.org/pipermail/mlton/2007-February/029597.html
 1. https://www.cs.cmu.edu/~rjsimmon/15411-f15/lec/10-ssa.pdf
 1. https://github.com/apple/swift/blob/master/docs/SIL.rst
-1. https://cranelift.readthedocs.io/en/latest/ir.html
+1. https://cranelift.readthedocs.io/en/latest/ir.html (ссылка протухла)
 1. https://mlir.llvm.org/docs/Rationale/Rationale/#block-arguments-vs-phi-nodes
 1. https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/compiling-without-continuations.pdf
 1. https://www.cs.purdue.edu/homes/rompf/papers/cong-icfp19.pdf

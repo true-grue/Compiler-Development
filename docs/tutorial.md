@@ -4,10 +4,6 @@
 
 Кстати говоря, писать компилятор мы будем на Python. Но пусть это не останавливает тех, кто предпочитает какой-то иной язык программирования. Вот вам полезное упражнение: переведите приведенный код на ваш любимый язык. Или воспользуйтесь уже готовым переводом:
 
-Реализация на F# (автор gsomix):
-[первая версия](https://github.com/gsomix/snippets/blob/master/shortest-intro-to-compiler-design.fsx),
-[SSA-версия](https://github.com/gsomix/snippets/blob/master/shortest-intro-to-compiler-design-ssa.fsx)
-
 # Начнем с синтаксического анализа
 
 ```Python
