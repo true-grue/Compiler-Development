@@ -20,7 +20,7 @@ _Комментарий от @ksromanov._
 ## Static Program Analysis
 Курс, разработанный Anders Møller и др. (Aarhus University).
 
-Конспект леций: https://cs.au.dk/~amoeller/spa/
+Конспект лекций: https://cs.au.dk/~amoeller/spa/
 
 Обзорная лекция на youtube (часть 1): https://www.youtube.com/watch?v=Lr4cMmaJHrg
 
