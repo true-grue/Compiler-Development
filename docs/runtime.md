@@ -74,7 +74,7 @@ Standard ML
 
 [Levine John R. Linkers and Loaders (The Morgan Kaufmann Series in Software Engineering and Programming)](http://www.staroceans.org/e-book/LinkersAndLoaders.pdf)
 
-Книга раскрывает цель и ключевые особенности статического и динамического связывания, обычно нерассматриваемые в теоретических курсах.
+Книга раскрывает цель и ключевые особенности статического и динамического связывания, которые обычно пропускаются в теоретических курсах.
 
 [Stephen Kell Dominic P. Mulligan Peter Sewell, The Missing Link: Explaining ELF Static Linking, Semantically](https://www.cl.cam.ac.uk/~pes20/rems/papers/oopsla-elf-linking-2016.pdf)
 
