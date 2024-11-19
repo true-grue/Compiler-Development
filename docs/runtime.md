@@ -78,4 +78,4 @@ Standard ML
 
 [Stephen Kell Dominic P. Mulligan Peter Sewell, The Missing Link: Explaining ELF Static Linking, Semantically](https://www.cl.cam.ac.uk/~pes20/rems/papers/oopsla-elf-linking-2016.pdf)
 
-В статье рассказывается про практические особенности процесса связывания с точки зрения теоретиков Computer Science. Объясняются особенности терминологии link-speak.
+В статье рассказываются практические особенности процесса связывания с точки зрения информатики (Theoretical Computer Science). Объясняются особенности терминологии (link-speak), используемой в документации и работах, посвящённых редакторам связей.
