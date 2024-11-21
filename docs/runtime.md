@@ -69,3 +69,13 @@ Lua
 Standard ML
 
 [Appel A. W. A runtime system //Lisp and Symbolic Computation. – 1990. – Т. 3. – №. 4. – С. 343-380.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.35.4846&rep=rep1&type=pdf)
+
+Машинный код в системах с раздельной компиляцией
+
+[Levine John R. Linkers and Loaders (The Morgan Kaufmann Series in Software Engineering and Programming)](http://www.staroceans.org/e-book/LinkersAndLoaders.pdf)
+
+Книга раскрывает цель и ключевые особенности статического и динамического связывания, которые обычно пропускаются в теоретических курсах.
+
+[Stephen Kell Dominic P. Mulligan Peter Sewell, The Missing Link: Explaining ELF Static Linking, Semantically](https://www.cl.cam.ac.uk/~pes20/rems/papers/oopsla-elf-linking-2016.pdf)
+
+В статье рассказываются практические особенности процесса связывания с точки зрения информатики (Theoretical Computer Science). Объясняются особенности терминологии (link-speak), используемой в документации и работах, посвящённых редакторам связей.
