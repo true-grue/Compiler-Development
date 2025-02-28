@@ -48,6 +48,12 @@ Most modern languages are implemented using Virtual Machines (VMs). While the be
 Сайт можно рекомендавать в качестве обзорного введения в тематику сборки мусора и как обширный справочный материал.
 
 
+[Reference Counting: Harder than it Sounds](https://www.playingwithpointers.com/blog/refcounting-harder-than-it-sounds.html)
+
+Блог-пост кратко и доходчиво разбирающий две основные проблемы подсчёта ссылок в многопоточной среде и перечисляющий (в виде ссылок на статьи)
+ряд подходов к решению этих проблем.
+
+
 ## Языковые машины
 
 Forth
